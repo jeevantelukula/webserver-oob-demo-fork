@@ -5,7 +5,7 @@ include ../../../common/linux_app/Makefile.common
 GST_CFLAGS := $(shell pkg-config --cflags gstreamer-1.0 2>/dev/null)
 GST_LIBS   := $(shell pkg-config --libs   gstreamer-1.0 2>/dev/null)
 
-TARGETS = audio_utils speech_utils
+TARGETS = speech_utils audio_utils
 
 all: $(TARGETS)
 
