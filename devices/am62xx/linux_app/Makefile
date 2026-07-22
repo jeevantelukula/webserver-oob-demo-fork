@@ -1,5 +1,7 @@
 include ../../../common/linux_app/Makefile.common
 
+.PHONY: all clean
+
 GST_CFLAGS := $(shell pkg-config --cflags gstreamer-1.0 2>/dev/null)
 GST_LIBS   := $(shell pkg-config --libs   gstreamer-1.0 2>/dev/null)
 
